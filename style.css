@@ -112,9 +112,11 @@
 }
 
 ::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: 100;
 }
+
+
 
 input[type='text'] {
   height: 70px;
@@ -127,9 +129,13 @@ input[type='text'] {
   background-image: url('./assests/carbon_user-avatar-filled-alt.svg');
   background-repeat: no-repeat;
   background-position: 90%;
+  outline: none;
 }
 
-
+input[type = 'text']:focus{
+  border: 2px solid #15aee5;
+  outline: none;
+}
 
 input[type='email'] {
   height: 70px;
@@ -147,6 +153,7 @@ input[type='email'] {
 
 input[type = 'email']:focus{
   border: 2px solid #15aee5;
+  outline: none;
 }
 
 input[type='password'] {
@@ -160,7 +167,15 @@ input[type='password'] {
   background-image: url('./assests/ic_round-remove-red-eye.svg');
   background-repeat: no-repeat;
   background-position: 95%;
+  outline:none;
 }
+
+input[type='password']:focus{
+  border: 2px solid #15aee5;
+  outline: none;
+}
+
+
 
 .btn {
   background-color: #15aee5;
@@ -173,12 +188,13 @@ input[type='password'] {
   height: 70px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: transparent;
   color: #15aee5;
-
+  cursor: pointer;
   font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -244,6 +260,7 @@ input[type='password'] {
   text-align: center;
   transition: 500ms;
   margin-top: -20px;
+  cursor: pointer;
 }
 
 .btn2:hover {
@@ -259,6 +276,7 @@ input[type='password'] {
   text-align: center;
   transition: 500ms;
   margin-top: -20px;
+  cursor: pointer;
 }
 .dsng {
   align-items: center;
@@ -295,3 +313,10 @@ input[type='password'] {
   margin-bottom: 10px;
 }
  
+.message{
+  display: none;
+  width: 100%;
+  color: red;
+  align-self: flex-start;
+  margin-left: 50px;
+}
