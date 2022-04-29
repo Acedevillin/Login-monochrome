@@ -21,6 +21,7 @@
   justify-content: space-evenly;
   list-style: none;
 }
+
 .nav-links a {
   text-decoration: none;
   align-items: center;
@@ -29,11 +30,9 @@
 }
 
 .container {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(40, 42, 50, 1),
-      rgba(20, 42, 50, 0.46)
-    ),
+      rgba(20, 42, 50, 0.46)),
     url('./assests/pexels-stephan-seeber-1054218.jpg');
   position: absolute;
   width: 100%;
@@ -69,6 +68,7 @@
   margin-top: 4rem;
   font-family: 'Blinker', sans-serif;
 }
+
 .text {
   height: 150px;
 }
@@ -132,10 +132,7 @@ input[type='text'] {
   outline: none;
 }
 
-input[type = 'text']:focus{
-  border: 2px solid #15aee5;
-  outline: none;
-}
+
 
 input[type='email'] {
   height: 70px;
@@ -151,10 +148,7 @@ input[type='email'] {
   outline: none;
 }
 
-input[type = 'email']:focus{
-  border: 2px solid #15aee5;
-  outline: none;
-}
+
 
 input[type='password'] {
   height: 70px;
@@ -167,12 +161,19 @@ input[type='password'] {
   background-image: url('./assests/ic_round-remove-red-eye.svg');
   background-repeat: no-repeat;
   background-position: 95%;
-  outline:none;
+  outline: none;
 }
 
-input[type='password']:focus{
+
+
+input:focus {
   border: 2px solid #15aee5;
   outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+  transition: 300ms;
 }
 
 
@@ -221,6 +222,7 @@ input[type='password']:focus{
   font-weight: 500;
   margin-top: -40px;
 }
+
 .frgt {
   margin-top: -30px;
   width: 100%;
@@ -229,6 +231,7 @@ input[type='password']:focus{
   color: #15aee5;
   font-size: 1.2rem;
 }
+
 .text2 {
   display: flex;
   position: absolute;
@@ -237,9 +240,11 @@ input[type='password']:focus{
   padding-left: 50px;
   letter-spacing: 1px;
 }
+
 .text2 p {
   color: #fffcf8;
 }
+
 .text2 a {
   text-decoration: none;
   color: #15aee5;
@@ -278,6 +283,7 @@ input[type='password']:focus{
   margin-top: -20px;
   cursor: pointer;
 }
+
 .dsng {
   align-items: center;
   width: 100%;
@@ -312,8 +318,8 @@ input[type='password']:focus{
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
- 
-.message{
+
+.message {
   display: none;
   width: 100%;
   color: red;
